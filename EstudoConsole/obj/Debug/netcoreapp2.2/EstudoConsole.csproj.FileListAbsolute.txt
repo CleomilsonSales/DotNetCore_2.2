@@ -1,0 +1,11 @@
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\bin\Debug\netcoreapp2.2\EstudoConsole.deps.json
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\bin\Debug\netcoreapp2.2\EstudoConsole.runtimeconfig.json
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\bin\Debug\netcoreapp2.2\EstudoConsole.runtimeconfig.dev.json
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\bin\Debug\netcoreapp2.2\EstudoConsole.dll
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\bin\Debug\netcoreapp2.2\EstudoConsole.pdb
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\obj\Debug\netcoreapp2.2\EstudoConsole.csprojAssemblyReference.cache
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\obj\Debug\netcoreapp2.2\EstudoConsole.csproj.CoreCompileInputs.cache
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\obj\Debug\netcoreapp2.2\EstudoConsole.AssemblyInfoInputs.cache
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\obj\Debug\netcoreapp2.2\EstudoConsole.AssemblyInfo.cs
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\obj\Debug\netcoreapp2.2\EstudoConsole.dll
+D:\Estudos\DotNet_Core\DotNetCore_2.2\estudoconsole\obj\Debug\netcoreapp2.2\EstudoConsole.pdb
