@@ -1,4 +1,4 @@
-Estudos DotNet Core 2.2 
+Estudos DotNet Console Core 2.2 
 
 
 //comandos
