@@ -1,1 +1,15 @@
 Estudos DotNet Core 2.2 
+
+
+//comandos
+//ver opção de criação
+dotnet new -h
+
+//criando referencia do projeto com a libary
+dotnet add projeto/projeto.csproj reference projeto.lib/projeto.lib.csproj
+
+//criando referencia do projeto e da libary com a solução
+dotnet sln solution add projeto/projetocsproj projeto.lib/projeto.lib.csproj
+
+//teste assistido
+dotnet watch run

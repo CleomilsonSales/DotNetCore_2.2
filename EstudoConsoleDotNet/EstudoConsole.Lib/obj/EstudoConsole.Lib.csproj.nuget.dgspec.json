@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj": {}
+  },
+  "projects": {
+    "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\estudoconsole.interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\estudoconsole.interface.csproj",
+        "projectName": "estudoconsole.interface",
+        "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\estudoconsole.interface.csproj",
+        "packagesPath": "C:\\Users\\CleomilsonSales\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CleomilsonSales\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj",
+        "projectName": "estudoconsole.lib",
+        "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj",
+        "packagesPath": "C:\\Users\\CleomilsonSales\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CleomilsonSales\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\estudoconsole.interface.csproj": {
+                "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\estudoconsole.interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
