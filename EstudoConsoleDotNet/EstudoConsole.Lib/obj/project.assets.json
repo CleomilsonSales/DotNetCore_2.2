@@ -201,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj",
+      "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole.lib\\estudoconsole.lib.csproj",
       "projectName": "estudoconsole.lib",
-      "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj",
+      "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole.lib\\estudoconsole.lib.csproj",
       "packagesPath": "C:\\Users\\CleomilsonSales\\.nuget\\packages\\",
-      "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\obj\\",
+      "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole.lib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -222,8 +222,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\estudoconsole.interface.csproj": {
-              "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.interface\\estudoconsole.interface.csproj"
+            "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole.interface\\estudoconsole.interface.csproj": {
+              "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole.interface\\estudoconsole.interface.csproj"
             }
           }
         }

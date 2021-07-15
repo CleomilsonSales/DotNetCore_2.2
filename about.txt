@@ -2,14 +2,17 @@ Estudos DotNet Console Core 2.2
 
 
 //comandos
-//ver opção de criação
+//ver opï¿½ï¿½o de criaï¿½ï¿½o
 dotnet new -h
 
 //criando referencia do projeto com a libary
 dotnet add projeto/projeto.csproj reference projeto.lib/projeto.lib.csproj
 
-//criando referencia do projeto e da libary com a solução
+//criando referencia do projeto e da libary com a soluï¿½ï¿½o
 dotnet sln solution add projeto/projetocsproj projeto.lib/projeto.lib.csproj
 
-//teste assistido
+//execuÃ§Ã£o assistido, sempre que salvar ele executa novamente automaticamente
 dotnet watch run
+
+//instalando o sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 2.2.0

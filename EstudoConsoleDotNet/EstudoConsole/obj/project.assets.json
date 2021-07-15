@@ -726,11 +726,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole\\estudoconsole.csproj",
+      "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole\\estudoconsole.csproj",
       "projectName": "estudoconsole",
-      "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole\\estudoconsole.csproj",
+      "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole\\estudoconsole.csproj",
       "packagesPath": "C:\\Users\\CleomilsonSales\\.nuget\\packages\\",
-      "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole\\obj\\",
+      "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -747,8 +747,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj": {
-              "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\estudoconsoledotnet\\estudoconsole.lib\\estudoconsole.lib.csproj"
+            "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole.lib\\estudoconsole.lib.csproj": {
+              "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\EstudoConsoleDotNet\\estudoconsole.lib\\estudoconsole.lib.csproj"
             }
           }
         }
