@@ -12430,11 +12430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\dotnetcore\\ProAgil.API\\ProAgil.API.csproj",
+      "projectUniqueName": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\DotNetCore\\ProAgil.API\\ProAgil.API.csproj",
       "projectName": "ProAgil.API",
-      "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\dotnetcore\\ProAgil.API\\ProAgil.API.csproj",
+      "projectPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\DotNetCore\\ProAgil.API\\ProAgil.API.csproj",
       "packagesPath": "C:\\Users\\CleomilsonSales\\.nuget\\packages\\",
-      "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\dotnetcore\\ProAgil.API\\obj\\",
+      "outputPath": "D:\\Estudos\\DotNet_Core\\DotNetCore_2.2\\DotNetCore\\ProAgil.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

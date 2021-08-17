@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProAgil.API.Model;
+using ProAgil.API.Data;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProAgil.API.Controllers
 {
@@ -11,11 +14,31 @@ namespace ProAgil.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public DataContext _context { get; }
+
+        public ValuesController(DataContext context)
+        {
+            _context = context;
+
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<Evento>> Get()
+        public async Task<IActionResult> Get() //para abrir um nova thread para cada requisição
         {
-            return new Evento[] { 
+            try
+            {
+                var results = await _context.Eventos.ToListAsync(); //await é para so continuar depois que retonar todos os dados do banco
+                return  Ok(results);
+            }
+            catch (System.Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Bando de dados falhou");
+            }
+        }
+        /*public ActionResult<IEnumerable<Evento>> Get()
+        {
+            return new Evento[] {
                 new Evento(){
                     EventoId = 1,
                     Tema = "Angular e .NET Core",
@@ -33,13 +56,27 @@ namespace ProAgil.API.Controllers
                     DataEvento = DateTime.Now.AddDays(3).ToString("dd/MM/yyyy")
                 }
              };
-        }
+
+             return _context.Eventos.ToList();
+        }*/
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<Evento> Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            return new Evento[] { 
+            try
+            {
+                var results = await _context.Eventos.FirstOrDefaultAsync(x => x.EventoId == id);
+                return  Ok(results);
+            }
+            catch (System.Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Bando de dados falhou");
+            }
+        }
+        /*public ActionResult<Evento> Get(int id)
+        {
+            return new Evento[] {
                 new Evento(){
                     EventoId = 1,
                     Tema = "Angular e .NET Core",
@@ -57,7 +94,10 @@ namespace ProAgil.API.Controllers
                     DataEvento = DateTime.Now.AddDays(3).ToString("dd/MM/yyyy")
                 }
              }.FirstOrDefault(x => x.EventoId == id);
-        }
+
+            return _context.Eventos.FirstOrDefault(x => x.EventoId == id);
+
+        }*/
 
         // POST api/values
         [HttpPost]
