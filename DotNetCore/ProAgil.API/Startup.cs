@@ -31,6 +31,8 @@ namespace ProAgil.API
                 x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
             );
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //dando acesso ao angular acessar o webservices
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +49,10 @@ namespace ProAgil.API
             }
 
             //app.UseHttpsRedirection(); //não usar agora
+            //dando acesso ao angular acessar o webservices
+            app.UseCors(x => x.AllowAnyOrigin() //toda origem
+                            .AllowAnyMethod() //todo metodo
+                            .AllowAnyHeader()) //todo cabeçalho
             app.UseMvc();
         }
     }
