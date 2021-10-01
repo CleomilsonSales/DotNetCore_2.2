@@ -53,6 +53,7 @@ namespace ProAgil.API
             app.UseCors(x => x.AllowAnyOrigin() //toda origem
                             .AllowAnyMethod() //todo metodo
                             .AllowAnyHeader()) //todo cabeçalho
+            app.UseStaticFiles(); //para ter acesso as imagens no servidor
             app.UseMvc();
         }
     }
