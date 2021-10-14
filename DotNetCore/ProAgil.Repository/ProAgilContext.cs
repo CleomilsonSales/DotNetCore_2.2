@@ -45,7 +45,6 @@ namespace ProAgil.Repository
                         .IsRequired(); 
             });
 
-
             modelBuilder.Entity<PalestranteEvento>()
             .HasKey(PE => new {PE.EventoId, PE.PalestranteId});
         }

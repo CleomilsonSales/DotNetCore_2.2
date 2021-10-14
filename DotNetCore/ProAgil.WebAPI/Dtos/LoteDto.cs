@@ -14,5 +14,5 @@ namespace ProAgil.WebAPI.Dtos
 
         [Range(2,120000)]
         public int quantidade { get; set; }
-    }
+    } 
 }

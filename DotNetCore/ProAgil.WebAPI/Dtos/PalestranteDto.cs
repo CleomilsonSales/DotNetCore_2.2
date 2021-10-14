@@ -13,5 +13,5 @@ namespace ProAgil.WebAPI.Dtos
 
         public List<RedeSocialDto> RedesSociais { get; set; }
         public List<EventoDto> Eventos { get; set; }
-    }
+    } 
 }

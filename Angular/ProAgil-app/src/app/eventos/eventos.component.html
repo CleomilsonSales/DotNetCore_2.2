@@ -10,7 +10,7 @@
   </div>
   <div>
     <button class="btn btn-outline-primary" (click)="novoEvento(template)">
-      <!-- &nbsp - gera um espaço de 1 caratere-->
+      <!-- &nbsp - gera um espaço de 1 caratere como um espaço-->
       <i class="fa fa-plus-circle"></i>&nbsp;
       Novo Evento
     </button>
@@ -42,7 +42,7 @@
 <tbody>
   <tr *ngFor="let evento of eventosFiltrados">
     <td>
-      <!-- utilizao o if para checar se a variável é verdadeira, como seu valor inicial é falso, as imagens não irão aparecer -->
+      <!-- utilizando o if para checar se a variável é verdadeira, como seu valor inicial é falso, as imagens não irão aparecer -->
       <img *ngIf="mostrarImagem"
     src="http://localhost:5000/resources/images/{{evento.imagemURL}}?_ts={{dataAtual}}"
       [style.width.px]="imagemLargura"
@@ -63,7 +63,7 @@
         {{evento.lotes[0].nome | uppercase}}
       </div>
     </td>
-    <!-- após o pipe '|' posso usar várias opções. "uppercase deixa todo maiúsculo" -->
+    <!-- após o pipe '|' posso usar várias opções. -->
     <td>
       <div class="btn-group">
         <!-- tooltip é uma função do bootstrap -->

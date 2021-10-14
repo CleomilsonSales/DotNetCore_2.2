@@ -20,5 +20,12 @@ dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 5.0.9
 //entity framework
 dotnet ef migrations add [nome]
 
+//criando camadas
+dotnet new classlib -n ProAgil.Domain
+
+//quando tirar do github
 //instalando bootstrap com Font Awesome
 npm install --save bootstrap @fortawesome/fontawesome-free
+
+//testando
+acessar o link 

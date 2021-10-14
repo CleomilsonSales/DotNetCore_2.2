@@ -7,7 +7,6 @@ import { Evento } from '../_models/Evento';
   providedIn: 'root'
 })
 export class EventoService {
-  // http://localhost:5000/api/evento
   baseURL = 'http://localhost:5000/api/evento';
   tokenHeader: HttpHeaders;
 

@@ -5,6 +5,7 @@ namespace ProAgil.WebAPI.Dtos
 {
     public class EventoDto
     {
+        //DTO - Data Transfer Object
         public int Id { get; set; }
         
         [Required (ErrorMessage="O local deve ser preenchido")]
