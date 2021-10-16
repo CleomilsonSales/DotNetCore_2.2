@@ -47,7 +47,7 @@ import { RegistrationComponent } from './user/registration/registration.componen
    ],
    imports: [
     BrowserModule,
-    /* npm install ngx-bootstrap --save para instalar o ngx */
+    /* npm install ngx-bootstrap --save para instalar o ngx */ 
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
     TooltipModule.forRoot(),

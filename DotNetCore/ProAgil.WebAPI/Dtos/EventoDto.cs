@@ -5,7 +5,7 @@ namespace ProAgil.WebAPI.Dtos
 {
     public class EventoDto
     {
-        //DTO - Data Transfer Object
+        //DTO - Data Transfer Object 
         public int Id { get; set; }
         
         [Required (ErrorMessage="O local deve ser preenchido")]
@@ -23,7 +23,7 @@ namespace ProAgil.WebAPI.Dtos
         [Phone]
         public string Telefone { get; set; }
 
-        // [EmailAddress] é um decoration do dataNotantions que valida automaticamente o dado se é um e-mail válido antes da inserção
+        // [EmailAddress] é um decoration do dataNotantions que valida automaticamente o dado se é um e-mail válido antes da inserção 
         [EmailAddress]
         public string Email { get; set; }
 

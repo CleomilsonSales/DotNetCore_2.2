@@ -20,7 +20,7 @@ export class NavComponent implements OnInit {
   }
 
   loggedIn() {
-    // direciono para a função loggedIn criado '/_services/auth.service' porque lá ele já realiza a verificação de login
+    // direciono para a função loggedIn criado '/_services/auth.service' porque lá ele já realiza a verificação de login 
     return this.authService.loggedIn();
   }
 
@@ -33,7 +33,6 @@ export class NavComponent implements OnInit {
     localStorage.removeItem('token');
     this.toastr.show('Log out efetuado!');
     this.router.navigate(['/user/login']);
-
   }
 
 }

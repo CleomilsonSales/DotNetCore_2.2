@@ -73,9 +73,9 @@ namespace ProAgil.Repository
             .Include(c => c.Lotes)
             .Include(c => c.RedesSociais);
 
-            //se o meu include palestrantes for verdadeiro eu os trago na query 
+            //se o meu include palestrantes for verdadeiro eu os trago na query  
             if(includePalestrantes){
-                //no primeiro include eu trarei somente a relação de palestrante e evento, por isso usei o then include para pegar somente o palestrante
+                //no primeiro include eu trarei somente a relação de palestrante e evento, por isso usei o then include para pegar somente o palestrante 
                 query = query
                 .Include(p =>p.PalestrantesEventos)
                 .ThenInclude(p => p.Palestrante);

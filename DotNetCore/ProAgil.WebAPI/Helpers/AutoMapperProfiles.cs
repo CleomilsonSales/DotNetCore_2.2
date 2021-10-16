@@ -11,8 +11,8 @@ namespace ProAgil.WebAPI.Helpers
         public AutoMapperProfiles()
         {
             //aqui basicamente os dados vão sair de Evento e vão para o EventoDto. Isso é feito em relação de muitos p/ muitos
-            // ReverseMap serve para inverter a ordem de inserção ex: dest é palestrante e src é palestrante evento...
-            // Com o reverseMap no final, automaticamnete o sistema deixa dest =>palestrante evento e src=>palestrante.
+            // ReverseMap serve para inverter a ordem de inserção ex: dest é palestrante e src é palestrante evento... 
+            // Com o reverseMap no final, automaticamnete o sistema deixa dest =>palestrante evento e src=>palestrante. 
             CreateMap<Evento, EventoDto>()
                 .ForMember(dest => dest.Palestrantes, opt =>{
                     opt.MapFrom(src => src.PalestrantesEventos.Select(x => x.Palestrante).ToList());

@@ -27,5 +27,15 @@ dotnet new classlib -n ProAgil.Domain
 //instalando bootstrap com Font Awesome
 npm install --save bootstrap @fortawesome/fontawesome-free
 
+//instalando ngx bootstrap - angular
+npm install ngx-bootstrap --save
+
+npm install ngx-toast --save
+
+//instalar AutoMapper 4.0.0 no WebAPI
+AutoMapper.Extensions.Microsoft.DepensencyInjection
+
+
+
 //testando
 acessar o link 

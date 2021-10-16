@@ -157,7 +157,7 @@ namespace ProAgil.WebAPI.Controllers
 
             try
             {   
-                //Aqui eu localizo o registro
+                //Aqui eu localizo o registro 
                 var evento = await _repo.GetEventoAsyncById(EventoId, false);
                 //aqui verifico se o registro possui algo de fato no banco, se não achar retorno que não existe
                 if(evento == null) return NotFound();
