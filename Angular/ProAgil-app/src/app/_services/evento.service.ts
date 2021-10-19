@@ -31,7 +31,7 @@ constructor(private http: HttpClient) {
     const formData = new FormData();
     formData.append('file', fileToUpload, name);
 
-    // return this.http.post('${this.baseURL}/upload', formData);
+    // return this.http.post('${this.baseURL}/upload', formData); 
     return this.http.post(`${this.baseURL}/upload`, formData, { headers: this.tokenHeader });
   }
 

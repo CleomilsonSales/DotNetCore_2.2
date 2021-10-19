@@ -34,7 +34,7 @@ export class EventosComponent implements OnInit {
   fileNameToUpdate: string;
   dataAtual: string;
 
-  // criado o get e set para não acessar a propriedade _filtroLista diretamente
+  // criado o get e set para não acessar a propriedade _filtroLista diretamente 
   _filtroLista = '';
 
   constructor(
@@ -136,6 +136,13 @@ export class EventosComponent implements OnInit {
 
       uploadImagem(){
         if (this.modoSalvar === 'post' ) {
+          
+          /*explicando o post do upload
+          o sistema retornara "c:\fakepath\algo.jpg"
+          o split era dividir em uma array de 3 posições com base na \
+          ficará nomeArquivo: [c:, fakepath, algo.jpg]
+          então eu pego a posição 2-algo.jpg
+          */
           const nomeArquivo = this.evento.imagemURL.split('\\', 3);
           this.evento.imagemURL = nomeArquivo[2];
           // upload de imagem

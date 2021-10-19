@@ -15,7 +15,7 @@ namespace ProAgil.WebAPI.Controllers
     [ApiController]
     public class EventoController : ControllerBase
     {
-        //Aqui estou injetando por meio de uma interface o meu repositório
+        //Aqui estou injetando por meio de uma interface o meu repositório 
         public readonly IProAgilRepository _repo;
 
         private readonly IMapper _mapper;
@@ -56,12 +56,12 @@ namespace ProAgil.WebAPI.Controllers
             try
             {
                 var file = Request.Form.Files[0];
-                var folderName = Path.Combine("Resources","Images");
+                var folderName = Path.Combine("Resources","Imagens");
                 var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
 
                 if(file.Length > 0){
                     var filename = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName;
-                    var fullPath = Path.Combine(pathToSave, filename.Replace("\"", " ").Trim());
+                    var fullPath = Path.Combine(pathToSave, filename.Replace("\"", " ").Trim()); // ' \" ' quer dizer que estou procurando pela "
 
                     using(var stream = new FileStream(fullPath, FileMode.Create)){
                         file.CopyTo(stream);
