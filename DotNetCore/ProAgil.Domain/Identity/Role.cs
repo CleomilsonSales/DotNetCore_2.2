@@ -7,4 +7,5 @@ namespace ProAgil.Domain.Identity
     {
         public List<UserRole> UserRoles { get; set; }
     }
+    
 }

@@ -10,7 +10,7 @@ namespace ProAgil.Repository
                                                     IdentityUserClaim<int>, UserRole, IdentityUserLogin<int>,
                                                     IdentityRoleClaim<int>, IdentityUserToken<int>>
     {
-        /*
+        /* 
             Um Data Context é um objeto do tipo System.Data.Linq.DataContext que suporta a atualização e 
             manutenção de um banco de dados para objetos conhecidos do LINQ efetuando o tratamento da c
             onexão do banco de dados, dessa forma ,para acessar as tabelas de um banco de dados elas 

@@ -35,7 +35,11 @@ npm install ngx-toast --save
 //instalar AutoMapper 4.0.0 no WebAPI
 AutoMapper.Extensions.Microsoft.DepensencyInjection
 
-
+//instalando o EF core 2.2 no Domain - nuget
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 //testando
 acessar o link 
+
+//criando banco de dados em repository com ef core
+dotnet ef --startup-project ../ProAgil.WebAPI database update

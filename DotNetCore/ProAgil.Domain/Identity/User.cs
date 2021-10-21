@@ -12,6 +12,6 @@ namespace ProAgil.Domain.Identity
         public string FullName {get; set; }
         public List<UserRole> UserRoles { get; set; }
             
-        
+    
     }
 }

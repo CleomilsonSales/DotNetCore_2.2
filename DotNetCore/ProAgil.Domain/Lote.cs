@@ -13,4 +13,5 @@ namespace ProAgil.Domain
         public int EventoId { get; set; }
         public Evento Evento { get; }
     }
+    
 }

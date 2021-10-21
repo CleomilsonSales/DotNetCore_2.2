@@ -9,5 +9,4 @@ namespace ProAgil.Domain
         public Evento Evento { get; set; }
     }
 
-
 }
