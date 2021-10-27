@@ -21,5 +21,6 @@ namespace ProAgil.WebAPI
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
     }
+    
 }
 

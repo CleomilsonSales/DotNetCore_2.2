@@ -29,7 +29,7 @@ export class NavComponent implements OnInit {
   }
 
   logout() {
-    // aqui removo o token armazenado no local storange
+    // aqui removo o token armazenado no local storange 
     localStorage.removeItem('token');
     this.toastr.show('Log out efetuado!');
     this.router.navigate(['/user/login']);

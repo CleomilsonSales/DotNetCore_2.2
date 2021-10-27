@@ -72,7 +72,7 @@ namespace ProAgil.WebAPI.Controllers
         public async Task<IActionResult> Login(UserLoginDto userLogin){
             try
             {
-                // Aqui verifico se existe algum usuário com o nome enviado dentro do json userLoginDto 
+                // Aqui verifico se existe algum usuário com o nome enviado dentro do json userLoginDto  
                 var user = await _userManager.FindByNameAsync(userLogin.UserName);
 
                 // aqui em baixo verifico a senha desse usuário que foi consultado e armazenado na variável acima

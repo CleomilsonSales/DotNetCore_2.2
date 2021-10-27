@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 
-// serviços
+// serviços 
 import { EventoService } from './_services/evento.service';
 
 // Componentes

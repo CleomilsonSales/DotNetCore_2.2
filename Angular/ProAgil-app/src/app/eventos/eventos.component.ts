@@ -177,7 +177,7 @@ export class EventosComponent implements OnInit {
             this.uploadImagem();
 
             // agora chamo meu método 'postEvento' localizado em '../_services/evento.service' e passo o Evento (this.evento)
-            // que é meu formulário 
+            // que é meu formulário  
             this.eventoService.postEvento(this.evento).subscribe(
               (novoEvento: Evento) => {
                 console.log(novoEvento);

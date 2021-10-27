@@ -9,7 +9,7 @@ import { LoginComponent } from './user/login/login.component';
 import { RegistrationComponent } from './user/registration/registration.component';
 import { AuthGuard } from './auth/auth.guard';
 
-/* configurando as rotas dos meus componentes */
+/* configurando as rotas dos meus componentes  */
 const routes: Routes = [
   { path: 'user', component: UserComponent,
     children: [

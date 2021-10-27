@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./titulo.component.css']
 })
 export class TituloComponent implements OnInit {
-  // @Input é como o props do Vue.js ele pega o valor que eu definir na tag e insere na variável titulo
+  // @Input é como o props do Vue.js ele pega o valor que eu definir na tag e insere na variável titulo 
   @Input() titulo: string;
   constructor() { }
 
