@@ -5,6 +5,7 @@ import { DebugElement } from '@angular/core';
 
 import { RegistrationComponent } from './registration.component';
 
+
 describe('RegistrationComponent', () => {
   let component: RegistrationComponent;
   let fixture: ComponentFixture<RegistrationComponent>;

@@ -20,7 +20,7 @@ export class NavComponent implements OnInit {
   }
 
   loggedIn() {
-    // direciono para a função loggedIn criado '/_services/auth.service' porque lá ele já realiza a verificação de login 
+    // direciono para a função loggedIn criado '/_services/auth.service' porque lá ele já realiza a verificação de login  
     return this.authService.loggedIn();
   }
 

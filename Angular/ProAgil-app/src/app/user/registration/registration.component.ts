@@ -69,7 +69,7 @@ export class RegistrationComponent implements OnInit {
           this.router.navigate(['/user/login']);
           this.toastr.success('Cadastro Realizado');
         },
-        // se der erro 
+        // se der erro  
         error => {
           const erro = error.error;
           erro.forEach(element =>{

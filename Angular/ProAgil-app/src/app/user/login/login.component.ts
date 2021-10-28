@@ -37,6 +37,7 @@ export class LoginComponent implements OnInit {
           this.toastr.error('Falha no login');
         }
       )
+      
   }
 
 }

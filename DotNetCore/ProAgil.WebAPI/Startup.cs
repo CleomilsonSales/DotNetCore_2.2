@@ -96,7 +96,7 @@ namespace ProAgil.WebAPI
             services.AddScoped<IProAgilRepository, ProAgilRepository>();
             //configurando para a aplicação trabalhar com automapper
             services.AddAutoMapper();
-            //permissão de configuração de CORS. 
+            //permissão de configuração de CORS.
             services.AddCors();
         }
 
