@@ -14,7 +14,7 @@ namespace ProAgil.Repository
             Um Data Context é um objeto do tipo System.Data.Linq.DataContext que suporta a atualização e 
             manutenção de um banco de dados para objetos conhecidos do LINQ efetuando o tratamento da c
             onexão do banco de dados, dessa forma ,para acessar as tabelas de um banco de dados elas 
-            devem estar mapeadas e disponíveis em um objeto Data Context. 
+            devem estar mapeadas e disponíveis em um objeto Data Context.
         */
         //Aqui onde serão criados classes e tabelas
         public ProAgilContext(DbContextOptions<ProAgilContext> options) : base (options){}

@@ -7,4 +7,5 @@ namespace ProAgil.WebAPI.Dtos
         public string Password { get; set; }
         public string FullName { get; set; }
     } 
+    
 }
