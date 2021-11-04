@@ -7,3 +7,4 @@ export interface Lote {
   quantidade: number;
   eventoId: number;
 }
+

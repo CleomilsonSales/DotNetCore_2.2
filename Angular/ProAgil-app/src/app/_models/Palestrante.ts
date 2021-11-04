@@ -11,3 +11,4 @@ export interface Palestrante {
   redesSociais: RedeSocial[];
   palestrantesEventos: Evento[];
 }
+

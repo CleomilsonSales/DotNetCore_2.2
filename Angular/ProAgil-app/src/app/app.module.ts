@@ -71,3 +71,4 @@ import { RegistrationComponent } from './user/registration/registration.componen
  ]
 })
 export class AppModule { }
+

@@ -13,7 +13,7 @@ describe('ContatosComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ ContatosComponent ]
     })
-    .compileComponents(); 
+    .compileComponents();
   }));
 
   beforeEach(() => {
@@ -26,3 +26,4 @@ describe('ContatosComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

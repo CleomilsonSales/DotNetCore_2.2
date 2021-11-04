@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class PalestrantesComponent implements OnInit {
 
   titulo = 'Palestrantes';
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
