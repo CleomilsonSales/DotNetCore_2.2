@@ -23,6 +23,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using ProAgil.Domain.Identity;
 using ProAgil.Repository;
+using ProAgil.Respository;
 
 namespace ProAgil.WebAPI
 {
@@ -35,27 +36,18 @@ namespace ProAgil.WebAPI
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container. 
+        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-    
-           services.AddDbContext<ProAgilContext>(
-               x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
+        {       
+            services.AddDbContext<ProAgilContext>(
+                x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
 
-            IdentityBuilder builder = services.AddIdentityCore<User>(options =>
-            {   /*
-                    Removendo validações padrões da senha. Na orde:
-                    nessa primeira opção eu desativo a obrigatoriedade de ter caractere especial em password
-                    desativo a validação de Alpha numérico
-                    remover a validação de minúsculas na senha
-                    remover a validação de maiúsculas
-                    Defino a quantidade máxima de caracteres para 4 na senha
-            
-                */
-                options.Password.RequireDigit = false;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireLowercase = false;
+            IdentityBuilder builder = services.AddIdentityCore<User>(options => 
+            {
+                options.Password.RequireDigit = false; 
+                options.Password.RequireNonAlphanumeric = false; 
+                options.Password.RequireLowercase = false; 
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredLength = 4;
             });
@@ -66,37 +58,32 @@ namespace ProAgil.WebAPI
             builder.AddRoleManager<RoleManager<Role>>();
             builder.AddSignInManager<SignInManager<User>>();
 
-            // configurações do jwt
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddJwtBearer(options =>{
-                        options.TokenValidationParameters = new TokenValidationParameters{
+                .AddJwtBearer(options => 
+                    {
+                        options.TokenValidationParameters = new TokenValidationParameters
+                        {
                             ValidateIssuerSigningKey = true,
                             IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
-                                // AppSettings:Token está criado no arquivo 'appsettings.Development.json'
                                 .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
                             ValidateIssuer = false,
-                            ValidateAudience = false    
-
+                            ValidateAudience = false
                         };
-                    });
+                    }
+                );
 
-
-            services.AddMvc(optoins =>{
-                // sempre que eu chamar o controller ele terá que respeitar essa configuração abaixo
-                var policy = new AuthorizationPolicyBuilder()
-                    .RequireAuthenticatedUser()
-                    .Build();
-                optoins.Filters.Add(new AuthorizeFilter(policy));
-            })
-            .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-            // nesse ponto ele evitar loops infinitos da relação dos meus Roles e meu usuário
-            .AddJsonOptions(opt => opt.SerializerSettings.ReferenceLoopHandling =
-            Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddMvc(options => {
+                    var policy = new AuthorizationPolicyBuilder()
+                        .RequireAuthenticatedUser()
+                        .Build();
+                    options.Filters.Add(new AuthorizeFilter(policy));
+                })
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                .AddJsonOptions(opt => opt.SerializerSettings.ReferenceLoopHandling =
+                 Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             services.AddScoped<IProAgilRepository, ProAgilRepository>();
-            //configurando para a aplicação trabalhar com automapper
-            services.AddAutoMapper();
-            //permissão de configuração de CORS. 
+            services.AddAutoMapper();            
             services.AddCors();
         }
 
@@ -109,16 +96,15 @@ namespace ProAgil.WebAPI
             }
             else
             {
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts. 
                 app.UseHsts();
-            }
+            }    
 
-            // essa linha vai informar a aplicação que o usuário tem que ser autenticado.
             app.UseAuthentication();
 
             //app.UseHttpsRedirection();
-            //parametrização das permissões de CORs.
-            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());            
+            app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions(){
                 FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
                 RequestPath = new PathString("/Resources")
